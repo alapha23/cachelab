@@ -1,0 +1,10 @@
+*.swp
+csim
+.marker
+.csim_results
+*.o
+test-trans
+tracegen
+trace.all
+trace.f*
+*.tar
