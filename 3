@@ -9,7 +9,6 @@
 #include "cachelab.h"
 
 #define MAXLINE 1024
-#define DEBUG_ 0 
 /*
  * **********************************************
  * t bits    |     s      |      b      |
@@ -20,7 +19,6 @@ struct csim{
 	int _s;	// set index bits
 	int _E;	// lines per set
 	int _b;	// number of block offset bits
-	int _t; // tag bits
 	int _verbose;
 	int fd;
 	int hit;
@@ -30,23 +28,17 @@ struct csim{
 
 void parseArgs(int argc, char **argv);
 int readline(int fd, char *buf, int maxlen);
-void cache_once(char *line);
 
 
 int main(int argc, char **argv)
 {
     parseArgs(argc, argv);
     char line[MAXLINE];
-
-    memset(line, 0, MAXLINE);
-
     while((readline(_state.fd, line, MAXLINE)) != 0)
     {
-#if DEBUG_ == 1
-      printf("%s", line);
-      fflush(stdout);
-#endif
-      cache_once(line);
+	    printf("%x", line);
+	    fflush(stdout);
+    //  cache_once(line);
       memset(line, 0, MAXLINE);
     }
 
@@ -57,20 +49,6 @@ int main(int argc, char **argv)
 	    fflush(stderr);	    
     }
     return 0;
-}
-
-void cache_once(char *line)
-{
-	char *c = (char *)malloc(8);
-	memset(c, 0, 8);
-	int request;
-	sscanf(line, "%s %d,%*d", c, &request);
-#if DEBUG_ == 1
-	printf("%s %d\n", c, request);
-#endif
-	if(strcmp(c, "I"))	
-		return ;
-
 }
 
 int readline(int fd, char *buf, int maxlen)
@@ -84,11 +62,6 @@ int readline(int fd, char *buf, int maxlen)
   for(n=0; n<maxlen; n++)
   {
     status = read(fd, (c+n), 1);
-#if DEBUG_ == 1
-    FILE *ffd = fopen("./test.txt", "a");
-    fprintf(ffd,  "%x", (int)*(c+n));
-    fclose(ffd);
-#endif
 
     if(status == 0)
     {
@@ -104,7 +77,7 @@ int readline(int fd, char *buf, int maxlen)
     }
 
     if(*(c+n) == '\n')
-    {	
+    {
 	strcat(buf, c);
       return n+1; 
     }
@@ -191,7 +164,6 @@ Examples:\n\
 				printf("%s", response);
 			}
 		}
-		_state._t = 64 - _state._s - _state._b;
 	}
 }
 
