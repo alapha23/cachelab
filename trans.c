@@ -67,7 +67,6 @@ void transpose_submit(int M, int N, int A[N][M], int B[M][N])
     // two loops to go through each row and column block
     for(colRun=0; colRun<64; colRun+=8 ){
        	for(rowRun=0; rowRun<64; rowRun+=8 ){
-
         	for(k=0; k<4; k++){
         		a0 = A[colRun+k][rowRun+0];
         		a1 = A[colRun+k][rowRun+1];
@@ -87,12 +86,8 @@ void transpose_submit(int M, int N, int A[N][M], int B[M][N])
         		B[rowRun+3][colRun+k+0] = a3;	// good job
         		B[rowRun+3][colRun+k+4] = a4;	
         	}
-
             /* Part B, moving sub-matrix b to sub-matrix c
              * and moving A->B for sub-matrix b and move matrix d
-             */
-            /*
-            Now that we have dealt with the first 4 col 8 arrow of A. The next job to deal with the "later use" assignment above. The "later use" assignments that we did above have taken a lot of places, so we need to bring these elements to their right positions.
              */
         	a0 = A[colRun+4][rowRun+4];
         	a1 = A[colRun+5][rowRun+4];
@@ -140,48 +135,35 @@ void transpose_submit(int M, int N, int A[N][M], int B[M][N])
         		B[rowRun+5+k][colRun+7] = a3;
         		B[rowRun+k][colRun+7] = a7;
         	}
-		}
-   	 }
+	}
+   }
    }
     else{
-		
-		for (j = 0; j < M; j += 16)
-		{
-			for (i = 0; i < N; i += 16)
-			{	
-				/*not all blocks will be square, so (rowBlock + 16 > N) may get an invalid access. Therefore we need to regularly check for r<N and c<M */
-				for(k = i; (k < N) && (k < i + 16); k++)
+	for (j = 0; j < M; j += 16)
+	{
+		for (i = 0; i < N; i += 16)
+		{	
+		/*not all blocks will be square, so (rowBlock + 16 > N) may get an invalid access. Therefore we need to regularly check for r<N and c<M */
+			for(k = i; (k < N) && (k < i + 16); k++)
+			{
+				for(c = j; (c < M) && (c < j + 16); c++)
 				{
-					for(c = j; (c < M) && (c < j + 16); c++)
+				//row and column are not same
+					if (k != c)
+						B[c][k] = A[k][c];
+					else
 					{
-						//row and column are not same
-						if (k != c)
-						{
-							B[c][k] = A[k][c];
-						}
-						
-						//row and column same. process like 32 x 32 
-						else
-						{
-							tmp = A[k][c];
-							d = k;
-						}
-					}
-					
-					//Diagonal
-					if(i == j) 
-					{
-						B[d][d] = tmp;
+						tmp = A[k][c];
+						d = k;
 					}
 				}
+				//Diagonal
+				if(i == j) 
+					B[d][d] = tmp;
 			}
-}
-
-    }    
-
-
-    
- 
+		}
+	}
+  }    
 }
 
 /* 
