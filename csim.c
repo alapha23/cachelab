@@ -44,7 +44,7 @@ struct mempool{
   struct set * curr_s;
 //  void * curr_s;
   struct set *live_s;
-} cachpool;
+} cachpool = {0};
 
 void parseArgs(int argc, char **argv);
 int readline(int fd, char *buf, int maxlen);
@@ -52,7 +52,7 @@ void cache_once(char *line);
 // checkcach returns 1 if request hit in the pool
 // checkcach returns 0 if miss
 void initcachpool(void);
-int checkcachpool(int request);
+int checkcachpool(long long request);
 void freepool(void);
 
 int main(int argc, char **argv)
@@ -68,15 +68,18 @@ int main(int argc, char **argv)
     {
       cache_once(line);
       memset(line, 0, MAXLINE);
+      fflush(stdout);
     }
-
-    freepool();
-
     printSummary(_state.hit, _state.miss, _state.evict);
+    fflush(stdout);
+    freepool();
+    fflush(stdout);
+  
     if(close(_state.fd) != 0)
     {
 	    fprintf(stderr, "close file error\n");
 	    fflush(stderr);	    
+	    exit(0);
     }
     return 0;
 }
@@ -84,17 +87,19 @@ int main(int argc, char **argv)
 void cache_once(char *line)
 {
 	char *c = (char *)malloc(8);
-	int request;
+	long long request;
 	int status;
 	memset(c, 0, 8);
 
-	sscanf(line, "%s %x,%*d", c, &request);
+	sscanf(line, "%s %llx,%*d", c, &request);
 	if(!strcmp(c, "I"))	
 	// we only cares about data cache performance
 		return ;
 	if(1==_state._verbose)
-	  printf("\n\n%s 0x%x: ", c, request);
+	  printf("%s 0x%llx: ", c, request);
 
+	for(int i=0; i < 1 + (!strcmp(c, "M")); i++)
+	{
 	status = checkcachpool(request);
 	switch(status)
 	{
@@ -102,19 +107,22 @@ void cache_once(char *line)
 	// it hits
 			_state.hit++;
 			if(1==_state._verbose)
-				printf("hit\n\n");
+				printf("hit ");
 			break;
 		case 0:
 			_state.miss++;
 			if(1==_state._verbose)
-				printf("miss\n\n");
+				printf("miss ");
 			break;
 		case 2:
+			_state.miss++;
 			_state.evict++;
 			if(1==_state._verbose)
-				printf("eviction\n\n");
+				printf("miss eviction ");
 			break;
+	  }
 	}
+	printf("\n");
 }
 
 int readline(int fd, char *buf, int maxlen)
@@ -242,39 +250,51 @@ void initcachpool(void)
   }
 }
 
-int checkcachpool( int request)
+int checkcachpool( long long request)
 {
 	// get s
-	int s = (request >> _state._b) & ~(0x1<<31 >> (64 - _state._b));
-	int tag = request & (1<<31 >> _state._t);
-
+	int s = request &(~(1<<31>>(_state._t-1))) & (1<<31>>(31 - _state._b));
+	long long tag = request & (1<<31 >> (_state._t-1));
 	struct set *ptr = cachpool.live_s;
+	if(1==_state._verbose)
+		printf("tag=%llx, set=%x: ",tag, s);
+
+	
 	// curr_s is always pointing to an empty slot 
 	for(; ptr != cachpool.curr_s; ptr += SET_SIZE)
 	{
 	// looping through all the sets
-	
+
 		if(ptr->set_id == s)
 		{
 		// if found the set
 		  for(int i = 0; i < ptr->live_bit; i++)
 		  {
 		// compare the tag
+		if(1 == _state._verbose)
+		{
+			printf("slot value:%llx, ", *(ptr->live_E + i));
+			printf("tag:%llx, ", tag);
+			fflush(stdout);			
+		}
 		    if( tag == *(ptr->live_E + i ))
+		    {
 		// if found the tag, hit
 			return 1;
+		    }
 		  }
 		// set is live, tag is not
-		// if live_bit == E; eviction happens
+
+	// if live_bit == E; eviction happens
+	//	printf("livebit=%x, _E=%x\n", ptr->live_bit, _state._E);
 		if(ptr->live_bit == _state._E)
 		{
-			if(1==_state._verbose)
-			  printf("eviction happened\n");
 			// age_bit
-			*(ptr->live_E + ptr->age_bit) = tag;
+			*(ptr->live_E + (ptr->age_bit % _state._E)) = tag;
 			ptr->age_bit++;
 			return 2;
 		}
+
 		// else, add the tag to the new slot
 		  *(ptr->live_E + ptr->live_bit) = tag;
 		  if(1==_state._verbose)
@@ -294,7 +314,7 @@ int checkcachpool( int request)
 	// set set_id
 	ptr->set_id = s;
 	// init the live_E
-	ptr->live_E = (long long *) malloc(_state._E * sizeof(int));
+	ptr->live_E = (long long *) malloc(_state._E * sizeof(long long));
 	// add to the live_E
 	*(ptr->live_E) = tag; 
 	// set set live_bit = 1

@@ -1,0 +1,232 @@
+Each set size24
+Set array size96
+Address of current set0xd2e010
+Next set0xd2e250
+Current pointer to the pool0xd2e010
+S 0x600aa0: tag=600aa0, set=0: miss 
+S 0x7ff000398: tag=7ff000380, set=18: miss 
+S 0x7ff000390: tag=7ff000380, set=10: miss 
+S 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, Add tag to the new slot in a live set
+prev live_E ends at 0xd305a8,new live_E ends at 0xd305b0
+miss 
+S 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000380, tag:7ff000360, Add tag to the new slot in a live set
+prev live_E ends at 0xd30e28,new live_E ends at 0xd30e30
+miss 
+S 0x7ff000384: tag=7ff000380, set=0: slot value:600aa0, tag:7ff000380, Add tag to the new slot in a live set
+prev live_E ends at 0xd2f4c8,new live_E ends at 0xd2f4d0
+miss 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600aa0, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+S 0x7ff000388: tag=7ff000380, set=8: miss 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600aa0, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a20: tag=600a20, set=0: slot value:600aa0, tag:600a20, slot value:7ff000380, tag:600a20, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a20, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a60: tag=600a60, set=0: slot value:600a20, tag:600a60, slot value:7ff000380, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a20, tag:7ff000380, slot value:600a60, tag:7ff000380, miss eviction 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a24: tag=600a20, set=0: slot value:7ff000380, tag:600a20, slot value:600a60, tag:600a20, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a70: tag=600a60, set=10: slot value:7ff000380, tag:600a60, slot value:7ff000360, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a28: tag=600a20, set=8: slot value:7ff000380, tag:600a20, Add tag to the new slot in a live set
+prev live_E ends at 0xd333f8,new live_E ends at 0xd33400
+miss 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:600a60, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a80: tag=600a80, set=0: slot value:7ff000380, tag:600a80, slot value:600a20, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a80, tag:7ff000380, slot value:600a20, tag:7ff000380, miss eviction 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a2c: tag=600a20, set=8: slot value:7ff000380, tag:600a20, slot value:600a20, tag:600a20, hit 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:600a60, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a90: tag=600a80, set=10: slot value:600a60, tag:600a80, slot value:7ff000360, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+M 0x7ff000384: tag=7ff000380, set=0: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=0: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+S 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a30: tag=600a20, set=10: slot value:600a60, tag:600a20, slot value:600a80, tag:600a20, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:600a20, tag:7ff000360, slot value:600a80, tag:7ff000360, miss eviction 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a64: tag=600a60, set=0: slot value:600a80, tag:600a60, slot value:7ff000380, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a34: tag=600a20, set=10: slot value:600a20, tag:600a20, hit 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:600a20, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a74: tag=600a60, set=10: slot value:600a20, tag:600a60, slot value:7ff000360, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000380, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a38: tag=600a20, set=18: slot value:7ff000380, tag:600a20, slot value:7ff000360, tag:600a20, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:600a60, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a84: tag=600a80, set=0: slot value:600a60, tag:600a80, slot value:7ff000380, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:600a60, tag:7ff000380, slot value:600a80, tag:7ff000380, miss eviction 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:600a20, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a3c: tag=600a20, set=18: slot value:600a20, tag:600a20, hit 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:600a60, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a94: tag=600a80, set=10: slot value:600a60, tag:600a80, slot value:7ff000360, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+M 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+S 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:600a20, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a40: tag=600a40, set=0: slot value:7ff000380, tag:600a40, slot value:600a80, tag:600a40, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:600a60, tag:7ff000360, slot value:600a80, tag:7ff000360, miss eviction 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a68: tag=600a60, set=8: slot value:7ff000380, tag:600a60, slot value:600a20, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:600a20, tag:7ff000380, miss eviction tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:600a20, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a44: tag=600a40, set=0: slot value:7ff000380, tag:600a40, slot value:600a40, tag:600a40, hit 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a78: tag=600a60, set=18: slot value:600a20, tag:600a60, slot value:7ff000360, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:600a20, tag:7ff000360, slot value:600a60, tag:7ff000360, miss eviction 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a48: tag=600a40, set=8: slot value:600a60, tag:600a40, slot value:7ff000380, tag:600a40, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:600a40, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a40, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:600a40, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a88: tag=600a80, set=8: slot value:600a40, tag:600a80, slot value:7ff000380, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:600a40, tag:7ff000380, slot value:600a80, tag:7ff000380, miss eviction tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a4c: tag=600a40, set=8: slot value:7ff000380, tag:600a40, slot value:600a80, tag:600a40, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a98: tag=600a80, set=18: slot value:7ff000360, tag:600a80, slot value:600a60, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+M 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+S 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a50: tag=600a40, set=10: slot value:7ff000360, tag:600a40, slot value:600a80, tag:600a40, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a6c: tag=600a60, set=8: slot value:7ff000380, tag:600a60, slot value:600a40, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:600a40, tag:7ff000380, miss eviction tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a54: tag=600a40, set=10: slot value:7ff000360, tag:600a40, slot value:600a40, tag:600a40, hit 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a7c: tag=600a60, set=18: slot value:7ff000360, tag:600a60, slot value:600a80, tag:600a60, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:600a60, tag:7ff000360, slot value:600a80, tag:7ff000360, miss eviction 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a58: tag=600a40, set=18: slot value:600a60, tag:600a40, slot value:7ff000360, tag:600a40, miss eviction 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:600a60, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a8c: tag=600a80, set=8: slot value:600a60, tag:600a80, slot value:7ff000380, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000378: tag=7ff000360, set=18: slot value:600a40, tag:7ff000360, slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x600a5c: tag=600a40, set=18: slot value:600a40, tag:600a40, hit 
+S 0x7ff00038c: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000370: tag=7ff000360, set=10: slot value:7ff000360, tag:7ff000360, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff00038c: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+S 0x600a9c: tag=600a80, set=18: slot value:600a40, tag:600a80, slot value:7ff000360, tag:600a80, miss eviction 
+M 0x7ff000388: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000388: tag=7ff000380, set=8: slot value:600a80, tag:7ff000380, slot value:7ff000380, tag:7ff000380, hit 
+M 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000384: tag=7ff000380, set=0: slot value:7ff000380, tag:7ff000380, hit 
+L 0x7ff000390: tag=7ff000380, set=10: slot value:7ff000360, tag:7ff000380, slot value:600a40, tag:7ff000380, miss eviction 
+L 0x7ff000398: tag=7ff000380, set=18: slot value:600a40, tag:7ff000380, slot value:600a80, tag:7ff000380, miss eviction 
+L 0x600aa0: tag=600aa0, set=0: slot value:7ff000380, tag:600aa0, slot value:600a40, tag:600aa0, miss eviction 
+hits:192 misses:46 evictions:38
